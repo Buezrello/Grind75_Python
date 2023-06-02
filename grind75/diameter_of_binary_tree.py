@@ -14,9 +14,8 @@ class Solution:
         self.diameter = 0
 
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        self.diameter = 0
         def diameter_calculating(node: TreeNode) -> int:
-            self.diameter = 0
-
             if not node:
                 return 0
 
